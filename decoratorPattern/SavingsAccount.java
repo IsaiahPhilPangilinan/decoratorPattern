@@ -2,12 +2,12 @@ package decoratorPattern;
 
 public class SavingsAccount implements BankAccount{
 
-    private int accountNumber;
+    private String accountNumber;
     private String accountName;
     private double balance;
 
     public void setAccountNumber(int accountNumber) {
-        this.accountNumber = accountNumber;
+        this.accountNumber = String.valueOf(accountNumber);
     }
 
     public void setAccountName(String accountName) {
